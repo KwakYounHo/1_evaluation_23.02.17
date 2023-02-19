@@ -1,0 +1,148 @@
+@media screen and (min-width: 1025px) {
+  /*---------- 기본 & 공통 ----------*/
+  body {
+    width: 1728px;
+    height: auto;
+  }
+  
+  /*---------- 헤더 ----------*/
+  header {
+    width: 100%;
+    height: 100px;
+    background-color: var(--main_color_Blue);
+    padding-left: 2rem;
+    font-family: var(--main_font);
+    font-size: 12px;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header > div {
+    width: 100%;
+    height: 20%;
+  }
+  /* 헤더 텍스트 박스 */
+  header > .text_box {
+    color: white;
+  }
+
+  /*---------- 네비 ----------*/
+  nav {
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+    font-family: var(--main_font);
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    padding-left: 2rem;
+  }
+
+  /* 메뉴 리스트 */
+  nav > .menu_li {
+    display: flex;
+    align-items: center;
+  }
+  nav > .menu_li > ul {
+    list-style-type: none;
+    display: inherit;
+    flex-direction: column;
+    padding: 0px;
+  }
+  nav > .menu_li > ul > a {
+    text-decoration: none;
+    color: black;
+    line-height: 1.5rem;
+  }
+
+  /*---------- 메인 ----------*/
+  main {
+    width: 100%;
+    height: 857px;
+    display: flex;
+  }
+
+  /*----- 첫 번째 컨텐츠 -----*/
+  main > .C_01_box {
+    font-family: var(--main_font);
+    font-size: 12px;
+    display: inherit;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 25%;
+    padding: 2rem 2rem;
+  }
+  main > .C_01_box > .post {
+    font-size: 8em;
+    font-weight: 700;
+    line-height: 4.9rem;
+    display: inherit;
+    flex-direction: column;
+    height: 60%;
+  }
+  main > .C_01_box > .button {
+    padding: 0 8rem;
+    height: 5%;
+  }
+  main > .C_01_box > .sub_post {
+    width: 285px;
+  }
+  
+  /*----- 두 번째 컨텐츠 -----*/
+  main > .C_02_box {
+    width: 75%;
+    background-color: var(--main_color_Blue);
+    display: flex;
+    padding: 5rem;
+  }
+
+  /* 주 텍스트 */
+  main > .C_02_box > .post{
+    width: 100%;
+    font-family: 'Karantina';
+    font-size: 128px;
+    font-weight: 400;
+    color: white;
+    display: inherit;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-bottom: 4px solid white;
+    padding-bottom: 1rem;
+    line-height: 7rem;
+  }
+
+  /* 히든 리스트 */
+  main > .C_02_box > .H_li {
+    display: none;
+  }
+
+  /*---------- 푸터 ----------*/
+  footer {
+    width: 100%;
+    height: 200px;
+    background-color: var(--sub_color_Black);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 푸터 포스트 */
+  footer > .f_post {
+    width: 100%;
+    height: 30%;
+    border-bottom: 2px solid white;
+  }
+  /* 푸터 인포 */
+  footer > .info {
+    width: 100%;
+    height: 70%;
+    font-family: var(--main_font);
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 0.5rem;
+    color: white;
+    padding-top: 0.5rem;
+  }
+}
